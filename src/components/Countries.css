@@ -1,0 +1,21 @@
+
+
+:root {
+    --background-color: #fff;
+    --text-color: #333;
+  }
+  *{
+    background: rgb(63, 58, 58);
+}
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  .dark-mode {
+    --background-color: #333;
+    --text-color: #fff;
+  }
+  
+  
