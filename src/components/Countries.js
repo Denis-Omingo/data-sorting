@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import { Table } from 'react-bootstrap';
 import CountriesData from '../CountriesData';
 import './Countries.css'
-import ThemeToggle from '../ThemeToggle';
+
 
 
 function Countries() {
 
     //const {isDarkMode}=useTheme(); 
-    const[isDarkMode,setIsDarkMode]=useState()
+
 
   const [data, setData] = useState(CountriesData);
   const [sortBy, setSortBy] = useState('');
@@ -75,8 +75,8 @@ function Countries() {
   }
 
   return (
-    <div className={`container ${isDarkMode ? 'dark-mode' :''}`}>
-        <ThemeToggle/>
+    <div className='container'>
+      
        <div className='text-primary'> {heading()}</div>
    
       <label className='me-2 text-3 text-bold bg-dark text-primary'>
